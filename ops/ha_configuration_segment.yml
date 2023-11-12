@@ -1,0 +1,5 @@
+garage_door_sensor:
+  - platform: rest
+    resource: https://localhost:5679/?id=24
+    scan_interval: 1
+    value_template: "{{value_json.value}}"

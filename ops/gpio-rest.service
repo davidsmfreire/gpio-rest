@@ -1,0 +1,11 @@
+[Unit]
+Description=GPIO REST API
+
+[Service]
+WorkingDirectory=/home/pi/gpio-rest
+ExecStart=/home/pi/gpio-rest/target/release/gpio-rest
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
