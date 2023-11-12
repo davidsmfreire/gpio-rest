@@ -3,4 +3,4 @@ binary_sensor:
     name: garage_door
     resource: http://localhost:5679/?id=24
     scan_interval: 1
-    value_template: "{{value_json.value}}"
+    value_template: "{{value_json.Value}}"
